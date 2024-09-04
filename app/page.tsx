@@ -1,6 +1,14 @@
 import Image from "next/image";
+import { createCustomerWithCustomId, getCustomers } from './server/functions/customers';
 
-export default function Home() {
+export const runtime = 'edge';
+
+
+export default async function Home() {
+  'use server';
+
+  // either use server actions
+  const customers = await getCustomers();
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -108,6 +116,21 @@ export default function Home() {
           </p>
         </a>
       </div>
+        <div>
+      <p>Your customer IDs</p>
+      <ul>
+        {customers.map((customer: any) => (
+          <li key={customer.customerId}>{customer.customerId}</li>
+        ))}
+        <li>
+          <form action={createCustomerWithCustomId}>
+            <input type="text" name="customerId" placeholder="add a new customer ID"></input>
+            <button type="submit">submit</button>
+          </form>
+        </li>
+      </ul>
+      <p>end</p>
+    </div>
     </main>
   );
 }
