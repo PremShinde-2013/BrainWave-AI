@@ -1,5 +1,5 @@
-import { db } from '@/server/db';
-import { customerTable } from '@/server/db/schema';
+import { db } from '../server/db';
+import { customerTable } from '../server/db/schema';
 
 export const runtime = 'edge';
 
