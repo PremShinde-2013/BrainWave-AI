@@ -27,7 +27,7 @@ export default async function Home() {
     <>
       <Navbar />
 
-      <div className="relative flex-col flex w-full items-center  justify-center overflow-hidden rounded-lg border bg-background p-20 md:shadow-xl">
+      <div className="relative flex-col flex w-full items-center  justify-center overflow-hidden rounded-lg border bg-background md:p-20 p-6 md:shadow-xl">
         <Hero />
 
         <AnimatedGridPattern
@@ -43,7 +43,7 @@ export default async function Home() {
       </div>
 
 
-      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-background p-20 md:shadow-xl">
+      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-background md:p-20 p-6  md:shadow-xl">
         <Showcases />
         <GridPattern
           width={80}
