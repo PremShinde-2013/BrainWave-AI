@@ -5,6 +5,8 @@ import Generating from "./generating";
 import Image from "next/image";
 import { AnimatedBeamDemo } from "./AnimatedBeamShow";
 import DotPattern from "@/components/magicui/dot-pattern";
+import Link from "next/link";
+import ShinyButton from "./magicui/shiny-button";
 
 
 const Services = () => {
@@ -19,7 +21,7 @@ const Services = () => {
         <div id="how-to-use">
             <div className="container">
                 <div className="mr-auto max-w-5xl">
-                    <h1 className="mr-auto text-left font-geistSans tracking-tighter text-4xl md:text-5xl lg:text-6xl text-transparent bg-clip-text bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)]">
+                    <h1 className="mr-auto text-left font-geistSans tracking-tighter text-4xl md:text-5xl lg:text-6xl text-black dark:text-white">
                         Sounds super cool? There&apos;s more.
                     </h1>
                     <p className="mb-10 ml-auto text-lg tracking-tight text-left font-nomral"></p>
@@ -54,10 +56,10 @@ const Services = () => {
                         </div>
 
                         <div className="relative ml-auto z-1 max-w-[17rem]">
-                            <h4 className="mb-4 text-3xl md:text-4xl">
+                            <h4 className="mb-4 text-3xl md:text-4xl dark:text-slate-200 text-purple-400">
                                 We paid attention to details.
                             </h4>
-                            <p className="body-2 mb-[3rem] text-n-3">
+                            <p className="body-2 mb-[3rem] text-n-3 dark:text-slate-200 text-purple-400">
                                 a small team of 4 student developers who have one mission.{" "}
                                 <br />
                                 Make the best second brain for everyone.
@@ -66,13 +68,13 @@ const Services = () => {
                                 {supermemoryPoints.map((item, index) => (
                                     <li
                                         key={index}
-                                        className="flex items-start py-4 border-t border-purple-700 dark:border-white/20"
+                                        className="flex items-start py-4 border-t border-slatetext-purple-400 dark:border-white/20"
                                     >
-                                        <CheckIcon className="inline-flex justify-center items-center mt-2 ml-2 w-4 h-4 rounded-full dark:text-slate-200 text-purple-700 size-4" />
+                                        <CheckIcon className="inline-flex justify-center items-center mt-2 ml-2 w-4 h-4 rounded-full dark:text-slate-200 text-purple-400 size-4" />
                                         {/* <Image
               
                                         alt="" width={24} height={24} src={check} /> */}
-                                        <p className="ml-4">{item}</p>
+                                        <p className="ml-4 dark:text-slate-200 text-purple-400">{item}</p>
                                     </li>
                                 ))}
                             </ul>
@@ -106,13 +108,17 @@ const Services = () => {
                                     with whatsapp and SMS coming soon. So you can add and query
                                     data in a private manner, from anywhere.
                                 </p>
-                                <a
+                                {/* <a
                                     href="/signin"
                                     className="inline-flex justify-center items-center py-4 px-10 w-full text-center bg-transparent bg-gradient-to-tr to-transparent rounded-xl transition-colors sm:w-auto mt-[-20px] bg-glass-gradient group from-zinc-300/5 via-gray-400/5 border-black dark:border-white/10 border-[1px] hover:bg-transparent/10"
                                 >
                                     Get started
                                     <ChevronRight className="ml-2 w-4 h-4 duration-300 group-hover:translate-x-1" />
-                                </a>
+                                </a> */}
+                                <Link href="/signin"
+                                    className="mt-5"  >
+                                    <ShinyButton text="Get Started" className="px-20 py-4 mt-5 border-2  border-black dark:border-white  text-2xl" />
+                                </Link>
                             </div>
                         </div>
 
@@ -185,7 +191,7 @@ const Services = () => {
                                 enjoy the benefits.
                             </p>
                             <a
-                                href="https://git.new/memory"
+                                href="https://github.com/PremShinde-2013/BrainWave-AI"
                                 className="inline-flex gap-x-1 justify-center items-center py-4 px-10 text-center bg-transparent bg-gradient-to-tr to-transparent rounded-xl transition-colors sm:w-auto w-fit mt-[-20px] bg-glass-gradient group from-zinc-300/5 via-gray-400/5 border-white/10 border-[1px] hover:bg-transparent/10"
                             >
                                 <GithubIcon className="inline-flex justify-center items-center w-5 h-5" />{" "}
