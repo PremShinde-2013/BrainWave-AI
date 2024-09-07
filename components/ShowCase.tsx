@@ -10,111 +10,6 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { WobbleCard } from "./ui/wobble-card";
 
 
-// type Props = {};
-
-// const ShowCase = (props: Props) => {
-//     return (
-//         <>
-//             <div className='flex flex-col' >
-
-
-//                 <div className="mr-auto relative max-w-3xl md:text-start">
-//                     <h2 className="font-display  text-4xl tracking-tight text-gray-200 sm:text-7xl">
-//                         <span className="text-transparent bg-clip-text bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">
-//                             BrainWave <br />
-//                         </span>{" "}
-//                         remembers everything.
-//                     </h2>
-//                     <p className="mt-4 text-lg tracking-tight text-gray-100">
-//                         ... so you don&apos;t have to. Whether you&apos;re a student, a professional,
-//                         or just a person on the the internet. we got you covered.
-//                     </p>
-//                     <div className="overflow-x-hidden overflow-y-hidden">
-//                         <div className="absolute right-0 z-20 top-[0%] h-40 w-[17%] overflow-x-hidden bg-[#369DFD] bg-opacity-20 blur-[110px]" />
-//                     </div>
-//                 </div>
-
-//                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-//                     {/* <WobbleCard
-//                         containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-//                         className=""
-//                     >
-//                         <div className="max-w-xs">
-//                             <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-//                                 Gippity AI powers the entire universe
-//                             </h2>
-//                             <p className="mt-4 text-left  text-base/6 text-neutral-200">
-//                                 With over 100,000 mothly active bot users, Gippity AI is the most
-//                                 popular AI platform for developers.
-//                             </p>
-//                         </div>
-//                         <Image
-//                             src="/linear.webp"
-//                             width={500}
-//                             height={500}
-//                             alt="linear demo image"
-//                             className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-//                         />
-//                     </WobbleCard>
-//                     <WobbleCard containerClassName="col-span-1 min-h-[300px]">
-//                         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-//                             No shirt, no shoes, no weapons.
-//                         </h2>
-//                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-//                             If someone yells “stop!”, goes limp, or taps out, the fight is over.
-//                         </p>
-//                     </WobbleCard>
-//                     <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-gray-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-//                         <div className="max-w-sm">
-//                             <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-//                                 Signup for blazing-fast cutting-edge state of the art Gippity AI
-//                                 wrapper today!
-//                             </h2>
-//                             <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-//                                 With over 100,000 mothly active bot users, Gippity AI is the most
-//                                 popular AI platform for developers.
-//                             </p>
-//                         </div>
-//                         <Image
-//                             src="/linear.webp"
-//                             width={500}
-//                             height={500}
-//                             alt="linear demo image"
-//                             className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
-//                         />
-//                     </WobbleCard> */}
-//                     <WobbleCard containerClassName="col-span-1 min-h-[300px]">
-
-
-//                         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-//                             No shirt, no shoes, no weapons.
-//                         </h2>
-//                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-//                             If someone yells “stop!”, goes limp, or taps out, the fight is over.
-//                         </p>
-//                     </WobbleCard> <WobbleCard containerClassName="col-span-1 min-h-[300px]">
-//                         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-//                             No shirt, no shoes, no weapons.
-//                         </h2>
-//                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-//                             If someone yells “stop!”, goes limp, or taps out, the fight is over.
-//                         </p>
-//                     </WobbleCard> <WobbleCard containerClassName="col-span-1 min-h-[300px]">
-//                         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-//                             No shirt, no shoes, no weapons.
-//                         </h2>
-//                         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-//                             If someone yells “stop!”, goes limp, or taps out, the fight is over.
-//                         </p>
-//                     </WobbleCard>
-//                 </div>
-//             </div>
-//         </>
-//     );
-// };
-
-// export default ShowCase;
-
 
 
 interface Feature {
@@ -130,7 +25,7 @@ const features: Array<Feature> = [
     {
         name: "Ideation",
         summary:
-            "Never lose a great idea again - instead of saving it in your head, save it in supermemory.",
+            "Never lose a great idea again - instead of saving it in your head, save it in Brainwave.ai",
         description:
             "The internet is full of great ideas, but there's a problem. They are ephemeral. They come and go. ",
         image: "asking_questions.png",
@@ -193,7 +88,7 @@ const features: Array<Feature> = [
         name: "Contacts",
         summary: "Life is all about the people you know.",
         description:
-            "Tell supermemory about people you know, and when you forget, you know where to look.",
+            "Tell Brainwave.ai about people you know, and when you forget, you know where to look.",
         image: "search.svg",
         // icon: function ContactsIcon() {
         //     return (
@@ -267,6 +162,7 @@ function FeaturesMobile() {
                                 width={12}
                                 height={12}
                                 sizes="52.75rem"
+
                             />
                         </div>
                     </div>
@@ -317,7 +213,9 @@ function FeaturesDesktop() {
                                             className="w-full h-auto"
                                             src={`/images/${feature.image}`}
                                             alt=""
-                                            layout="responsive"
+                                            // layout="responsive"
+                                            // fill
+
                                             width={1920}  // or any large value to maintain aspect ratio
                                             height={1080} // or the same aspect ratio as width
                                             sizes="52.75rem"
@@ -345,7 +243,7 @@ export function Showcases() {
             <div className="mr-auto relative max-w-3xl md:text-start">
                 <h2 className="font-display  text-4xl tracking-tight text-black dark:text-white sm:text-7xl">
                     <span className="text-transparent bg-clip-text bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">
-                        BrainWave <br />
+                        Brainwave.ai <br />
                     </span>{" "}
                     remembers everything.
                 </h2>

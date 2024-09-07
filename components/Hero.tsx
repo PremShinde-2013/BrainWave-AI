@@ -48,7 +48,7 @@ function Hero() {
                         className="relative inline-block text-black dark:text-white"
                         style={{ display: 'inline-block' }}
                     >
-                        BrainWave
+                        Brainwave.ai
                         <span
                             className="absolute left-0 bottom-[-8px] w-full bg-purple-600"
                             style={{
@@ -70,7 +70,7 @@ function Hero() {
                     }}
                     className="text-lg text-center text-soft-foreground-text"
                 >
-                    Master your knowledge effortlessly with BrainWave AI. Organize, search, and collaborate using our smart search engine, intuitive writing assistant, and interactive canvas. Elevate your ideas and stay ahead with BrainWave AI—where your mind meets boundless potential.
+                    Master your knowledge effortlessly with Brainwave.ai. Organize, search, and collaborate using our smart search engine, intuitive writing assistant, and interactive canvas. Elevate your ideas and stay ahead with Brainwave.ai—where your mind meets boundless potential.
                 </motion.p>
 
                 <Link href="/signin">

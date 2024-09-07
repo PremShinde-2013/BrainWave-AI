@@ -47,24 +47,24 @@ const SlideTabs = () => {
 			className="flex relative items-center py-3 px-5 mx-auto text-sm text-black dark:text-gray-200 bg-gradient-to-tr to-transparent rounded-full border-2 w-fit border-white/5 from-zinc-300/5 via-gray-100/5 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-lg backdrop-filter"
 		>
 			<Link href={"/"} className="flex items-start mr-4 opacity-50 h-fit">
-								<Image src={Logo} alt="Supermemory logo" width={40} height={40} />
+				<Image src={Logo} alt="Supermemory logo" width={40} height={40} />
 
 
 			</Link>
 
 			<Tab key={0} setPosition={setPosition}>
 				<Link className="w-full h-full" href={"/home"}>
-					{isMobile ? <HomeIcon /> : "Home"} 
+					{isMobile ? <HomeIcon /> : "Home"}
 				</Link>
 			</Tab>
 			<Tab setPosition={setPosition}>
 				<Link className="w-full h-full" href={"/#use-cases"}>
-					{isMobile ? <ListIcon /> : "Use Cases"} 
+					{isMobile ? <ListIcon /> : "Use Cases"}
 				</Link>
 			</Tab>
 			<Tab setPosition={setPosition}>
 				<Link className="w-full h-full" href={"/#features"}>
-					{isMobile ? <StarIcon /> : "Features"} 
+					{isMobile ? <StarIcon /> : "Features"}
 				</Link>
 			</Tab>
 			<Tab setPosition={setPosition}>
@@ -72,14 +72,14 @@ const SlideTabs = () => {
 					className="w-full h-full"
 					href={"https://github.com/Dhravya/supermemory/graphs/contributors"}
 				>
-					{isMobile ? <UsersIcon /> : "Team"} 
+					{isMobile ? <UsersIcon /> : "Team"}
 				</Link>
 			</Tab>
-			<Link 				href="https://git.new/memory"
->
-			<ShinyButton text="Github" className="rounded-3xl" />
+			<Link href="https://github.com/PremShinde-2013/BrainWave-AI"
+			>
+				<ShinyButton text="Github" className="rounded-3xl" />
 			</Link>
-			
+
 
 			<Cursor position={position} />
 		</ul>

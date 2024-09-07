@@ -14,7 +14,10 @@ import { Navbar } from '@/components/ui/floating-navbar';
 import Hero from '@/components/Hero';
 import DotPattern from '@/components/magicui/dot-pattern';
 import { Showcases } from '../components/ShowCase';
-import Services from '@/components';
+import Services from '../components/Services';
+import Quality from '@/components/Quality';
+import RotatingIcons from '@/components/RotatingIcons';
+import Cta from '@/components/Cta';
 
 
 
@@ -27,7 +30,7 @@ export default async function Home() {
     <>
       <Navbar />
 
-      <div className="relative flex-col flex w-full items-center  justify-center overflow-hidden rounded-lg border bg-background md:p-20 p-6 md:shadow-xl">
+      <div className="relative flex-col flex w-full items-center  justify-center overflow-hidden rounded-lg  bg-background md:p-20 p-6 ">
         <Hero />
 
         <AnimatedGridPattern
@@ -43,7 +46,7 @@ export default async function Home() {
       </div>
 
 
-      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-background md:p-20 p-6  md:shadow-xl">
+      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg border-b-0  bg-background md:p-20 p-6  ">
         <Showcases />
         <GridPattern
           width={80}
@@ -59,8 +62,44 @@ export default async function Home() {
 
       </div>
 
-      {/* <Services /> */}
+      <Services />
+      <Quality />
 
+      {/* <RotatingIcons /> */}
+
+      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg  border-b-0 bg-background p-20 ">
+        <RotatingIcons />
+
+        <DotPattern
+          width={20}
+          height={20}
+          cx={2}
+          cy={2}
+          cr={2}
+          className={cn(
+            "[mask-image:linear-gradient(to_bottom,white,transparent,transparent)] ",
+            "inset-x-0 inset-y-[-50%] h-[300%] ",
+
+          )}
+        />
+      </div>
+
+
+      <div className="relative flex h-full w-full mt-10 items-center justify-center overflow-hidden rounded-lg  border-b-0 bg-background md:p-20 p-6  ">
+        <Cta />
+        <GridPattern
+          width={80}
+          height={80}
+          x={-1}
+          y={-1}
+          strokeDasharray={"8"}
+          className={cn(
+            "[mask-image:linear-gradient(to_bottom,white,transparent,transparent)] ",
+            "inset-x-0 inset-y-[-50%] h-[300%] ",
+          )}
+        />
+
+      </div>
 
 
 
