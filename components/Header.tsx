@@ -48,8 +48,6 @@ const SlideTabs = () => {
 		>
 			<Link href={"/"} className="flex items-start mr-4 opacity-50 h-fit">
 				<Image src={Logo} alt="Supermemory logo" className="bg-black rounded-full" width={40} height={40} />
-
-
 			</Link>
 
 			<Tab key={0} setPosition={setPosition}>
