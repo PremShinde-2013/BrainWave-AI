@@ -5,6 +5,7 @@ import { auth, signIn } from "../../server/auth";
 import { Google } from "../../../components/icons";
 import gradientStyle from "./_components/TextGradient/gradient.module.css";
 import { cn } from "../../../lib/utils";
+import GoogleLogo from "../../../public/googlelogo.png";
 import { redirect } from "next/navigation";
 // import { toast } from "sonner";
 // 
@@ -72,9 +73,9 @@ async function Signin({
                                 >
                                     <button
                                         type="submit"
-                                        className={`relative text-black dark:text-white border-black border-2 transition-width flex gap-3 justify-center w-full items-center rounded-2xl bg-page-gradient hover:opacity-70  duration-500  px-6 py-4 outline-none duration- focus:outline-none `}
+                                        className={`relative text-black dark:text-white border-black  border transition-width flex gap-3 justify-center w-full items-center rounded-2xl bg-page-gradient hover:opacity-70   duration-500  px-6 py-4 outline-none duration- focus:outline-none `}
                                     >
-                                        <Google />
+                                        <Image src={GoogleLogo} alt="" width={35} height={35} />
                                         <span className="relative w-full">Continue with Google</span>
                                     </button>
                                 </form>
@@ -95,7 +96,7 @@ async function Signin({
                     </div>
                 </div>
                 <div className="relative hidden w-0 lg:flex lg:w-1/2  flex-col items-center justify-center min-h-screen bg-page-gradient overflow-hidden">
-                    <img
+                    <Image
                         className="absolute inset-x-0 -top-20 opacity-15 "
                         src={"/images/landing-hero-left.png"}
                         width={1000}
