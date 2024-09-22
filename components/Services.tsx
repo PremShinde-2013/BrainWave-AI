@@ -99,7 +99,7 @@ const Services = () => {
                                 />
                             </div>
 
-                            <div className="flex md:absolute md:mt-4 lg:-mt-20 inset-0 flex-col md:justify-end justify-center items-center md:items-start p-8 bg-glass-gradient">
+                            <div className="flex md:absolute md:mt-4 lg:mt-20 inset-0 flex-col md:justify-end justify-center items-center md:items-start p-8 bg-glass-gradient">
                                 <h4 className="text-3xl tracking-tight mb-2 text-center dark:text-slate-300 text-black bg-clip-text bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)]">
                                     Brainwave.ai works everywhere you are.
                                 </h4>
@@ -116,8 +116,8 @@ const Services = () => {
                                     <ChevronRight className="ml-2 w-4 h-4 duration-300 group-hover:translate-x-1" />
                                 </a> */}
                                 <Link href="/signin"
-                                    className="mt-5"  >
-                                    <ShinyButton text="Get Started" className="px-20 py-4 mt-5 border-2  border-black dark:border-white  text-2xl" />
+                                    className=""  >
+                                    <ShinyButton text="Get Started" className="px-20 py-4  border-2  border-black dark:border-white  text-2xl" />
                                 </Link>
                             </div>
                         </div>
